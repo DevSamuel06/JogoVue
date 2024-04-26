@@ -8,3 +8,6 @@ Este é um jogo de cartas simples desenvolvido em Vue.js, onde um cavaleiro enfr
 - **Defender**: Reduz o dano recebido na próxima rodada.
 - **Usar Poção**: Recupera pontos de vida do personagem.
 - **Correr**: Encerra a batalha, declarando o oponente como vencedor.
+
+## Teste o jogo 
+https://devsamuel06.github.io/JogoVue/
