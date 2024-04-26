@@ -33,7 +33,7 @@
             <h2>Dragão</h2>
             <img src="./img/dragao.png" class="character">
             <div class="health-bar" :style="{width: enemy.life + '%'}">
-                <p v-if="enemy.life < 0">
+                <p v-if="enemy.life < 0" >
                     Dead
                 </p>
                 <p v-else  class="health-bar" :class="getHealthBarClass(enemy)">
@@ -44,16 +44,20 @@
     </div>
     
     <div class="log-box">
-        <h3>Log de jogo</h3>
-        <ul style="max-width: 200px;">
-            <li v-for="log in battleLog" :key="log">{{ log }}</li>
-        </ul>
+        <div>
+            <h3>Log de jogo</h3>
+            <ul style="max-width: 200px;">
+                <li v-for="log in battleLog" :key="log">{{ log }}</li>
+            </ul>
+        </div>
+
+        <div class="winner-box" v-if="isGameOver">
+            <h2 v-if="winner">{{ winner }} venceu!</h2>
+            <button @click="reiniciarJogo" class="button">Reiniciar Jogo</button>
+        </div>
     </div>
 
-    <div class="winner-box" v-if="isGameOver">
-        <h2 v-if="winner">{{ winner }} venceu!</h2>
-        <button @click="reiniciarJogo">Reiniciar Jogo</button>
-    </div>
+
 </div>
 
 <script src="index.js"></script>

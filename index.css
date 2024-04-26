@@ -68,12 +68,14 @@ body, html {
 }
 
 .log-box {
-    background-color: rgba(255, 255, 255, 0.8);
     color: rgb(43, 37, 37);
     padding: 10px;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 8px;
     max-height: 200px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .log-box h3 {
@@ -85,17 +87,33 @@ body, html {
 }
 
 .winner-box {
-    background-color: #44475a;
-    color: white;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(43, 37, 37);
+    padding: 0px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-left: 350px;
 }
 
 .winner-box h2 {
     margin-top: 0;
 }
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #505253;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8f9294;
+}
 
 .green {
     background-color: #4CAF50; 
@@ -110,6 +128,6 @@ body, html {
 }
 
 .dead {
-    background-color: #8c8c8c; 
+    background-color: #ff0000; 
+    
 }
-
